@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+.introduce{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 100px;
+}
+.introduce .paragraph{
+    font-family: 'Nanum Gothic', sans-serif;
+    width: 65%;
+    padding: 0 3vw;
+    color: white;
+    line-height: 1.5em;
+}
+.introduce .paragraph p{
+    margin-bottom: 20px;
+}
+
+.introduce .paragraph .tag{
+    display: flex;
+    justify-content: flex-end;
+}
+.introduce .paragraph .tag li{
+    background-color: rgb(122, 122, 122);
+    margin-right: 10px;
+    padding: 1px 10px;
+    border-radius: 7px;
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+}
