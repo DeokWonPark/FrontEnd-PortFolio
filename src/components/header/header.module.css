@@ -50,6 +50,8 @@
 }
 .header .info .linkBox a p{
     align-self: center;
+    padding-bottom: 3px;
+    border-bottom: 1px dotted white;
 }
 .header .info .linkBox svg{
     padding-right: 10px;

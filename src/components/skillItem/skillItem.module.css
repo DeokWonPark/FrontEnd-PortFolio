@@ -1,0 +1,41 @@
+.gridBox{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    column-gap: 7%;
+}
+.itemBox{
+    /* margin: 0 50px; */
+}
+.itemBox .item{
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.itemBox .item .itemImg{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px black;
+}
+.itemBox .item .itemName{
+    margin-right: 3px;
+    align-self: center;
+    font-weight: 700;
+}
+.itemBox .item .itemLevel{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
+.itemBox .item .itemLevel.three{
+    background-color: rebeccapurple;
+}
+.itemBox .item .itemLevel.two{
+    background-color: rgb(48, 82, 233);
+}
+.itemBox .item .itemLevel.one{
+    background-color: green;
+}

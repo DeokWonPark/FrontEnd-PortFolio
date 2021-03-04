@@ -1,0 +1,96 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+.skills .titleBox{
+    margin-bottom: 30px;
+    display: flex;
+}
+.skills .titleBox .level{
+    margin-left: 10px;
+    align-self: center;
+    display: flex;
+}
+.skills .titleBox .level li{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 800;
+    cursor: pointer;
+}
+.skills .titleBox .level .three{
+    background-color: rebeccapurple;
+}
+.skills .titleBox .level .two{
+    background-color: rgb(57, 80, 185);
+}
+.skills .titleBox .level .one{
+    background-color: green;
+}
+
+.skills .titleBox .description{
+    position: relative;
+    padding: 10px 10px 0 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+}
+.skills .titleBox .description::after{
+    border-left: 10px solid transparent; 
+    border-right: 10px solid transparent; 
+    border-bottom: 0px solid transparent; 
+    content:""; 
+    position:absolute;
+    top:31px;
+    left:60px;  
+}
+.skills .titleBox .threeInfo{
+    box-sizing: border-box;
+    background-color: rebeccapurple;
+    top: -40px;
+    right: 170px;
+}
+.skills .titleBox .threeInfo::after{
+    border-top: 10px solid rebeccapurple; 
+}
+
+.skills .titleBox .twoInfo{
+    background-color: rgb(57, 80, 185);
+    top: -40px;
+    right: 130px;
+}
+.skills .titleBox .twoInfo::after{
+    border-top: 10px solid rgb(57, 80, 185); 
+}
+.skills .titleBox .oneInfo{
+    background-color: green;
+    top: -40px;
+    right: 90px;
+}
+.skills .titleBox .oneInfo::after{
+    border-top: 10px solid green; 
+}
+.skills .skillBox{
+    width: 100%;
+    height: 100%;
+    padding: 1vw 3vw 2vw 3vw;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px black;
+}
+.skills .skillBox .Box{
+    display: flex;
+    padding: 3vh 0 5vh 0;
+    border-bottom: 1px dashed rgb(189, 189, 223);
+}
+.skills .skillBox .Box .CategoryTitle{
+    width: 30%;
+    font-size: 24px;
+    font-weight: 700;
+    color: navy;
+}
