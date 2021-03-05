@@ -43,6 +43,10 @@
     background-color: navy;
     border-radius: 5px;
 }
+.otherItem td .more{
+    background:none;
+    border: none;
+}
 .otherItem td svg{
     color: navy;
     font-size: 28px;

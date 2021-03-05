@@ -22,7 +22,7 @@ const ProjectItem = ({item}) => {
             <h2 className={styles.infoTitle}>USE STACK</h2>
             <ul className={styles.stackList}>
                 {item.stack.map((item)=>{
-                    return <li>{item}</li>
+                    return <li key={item}>{item}</li>
                 })}
             </ul>
         </div>
@@ -30,7 +30,7 @@ const ProjectItem = ({item}) => {
             <h2 className={styles.infoTitle}>What I Did</h2>
             <ul className={styles.devList}>
                 {item.content.map((item)=>{
-                    return <li>{item}</li>
+                    return <li key={item}>{item}</li>
                 })}
             </ul>
         </div>
