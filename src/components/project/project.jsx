@@ -128,7 +128,7 @@ const Project = (props) => {
         },
     ])
     return <section className={styles.Project}>
-        <h1 className="title">Projects</h1>
+        <h1 className="title">PROJECTS</h1>
         <div className={styles.Contents}>
             <div className={styles.inner}>
                 {projectItem.map((item)=>{

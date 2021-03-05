@@ -84,7 +84,7 @@ const OtherProjects = (props) => {
 
     return <>
     <section className={styles.Other}>
-        <h2 className="title">Other Projects</h2>
+        <h1 className="title">OTHER PROJECTS</h1>
         <div className={styles.projectBox}>
             <table className={styles.projectTable}>
                 <thead>
