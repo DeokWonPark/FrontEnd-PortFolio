@@ -1,0 +1,29 @@
+.Edu{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    color: white;
+}
+.Edu .info{
+    margin-left: 2.5vw;
+}
+.Edu .info li{
+    display: flex;
+    padding: 30px 0 30px 0px;
+    border-bottom: 1px solid rgb(65, 70, 88);
+    font-size: 24px;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+.Edu .info li .date{
+    margin-right: 30px;
+    color: rgb(214, 214, 214);
+}
+.Edu .info li .school{
+    font-weight: 700;
+    padding-bottom: 12px;
+}
+.Edu .info li .sub{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(214, 214, 214);
+}
