@@ -1,0 +1,29 @@
+.Other{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+.Other .projectBox{
+    background-color: white;
+    padding: 20px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px black;
+}
+.Other .projectBox .projectTable{
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.Other .projectBox .projectTable thead{
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 2px solid navy;
+}
+.Other .projectBox .projectTable thead .subTitle{
+    padding-bottom: 10px;
+}
+.Other .projectBox .projectTable tbody{
+    vertical-align: middle;
+}

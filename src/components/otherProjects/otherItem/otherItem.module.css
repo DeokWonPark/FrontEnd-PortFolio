@@ -1,0 +1,54 @@
+.otherItem{
+    display: table-row;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(109, 109, 109);
+    border-bottom: 1px solid rgb(214, 214, 214);
+    cursor: pointer;
+}
+.otherItem:hover{
+    background-color: rgb(229, 230, 231);
+}
+.otherItem th,
+.otherItem td{
+    padding: 5px 0;
+    vertical-align: middle;
+}
+.otherItem th .title{
+    font-weight: 700;
+    font-size: 17px;
+    color: black;
+}
+.otherItem .info{
+    padding-top: 10px;
+}
+.otherItem .info p{
+    margin-bottom: 3px;
+}
+.otherItem .info .subTitle{
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 700;
+}
+.otherItem .info .stack{
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+    color: white;
+}
+.otherItem .info .stack .skill{
+    margin: 7px 5px 15px 5px;
+    padding: 4px 10px;
+    background-color: navy;
+    border-radius: 5px;
+}
+.otherItem td svg{
+    color: navy;
+    font-size: 28px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.otherItem td svg:hover{
+    opacity: 0.4;
+}

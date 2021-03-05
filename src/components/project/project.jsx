@@ -12,7 +12,7 @@ const Project = (props) => {
             maincut:'/images/fsProject.png',
             logo:'/images/fslogo.png',
             description:'프랜차이즈 갈비쌈 냉면 웹사이트 개발',
-            people:'단독 개발',
+            people:'개인 프로젝트',
             content:[
                 '하단의 놀력 이벤트 기능에서 경품 당첨 기능을 추가한 고도화 개발',
                 '하단의 놀력 이벤트 기능에서 경품 당첨 기능을 추가한 고도화 개발',
@@ -37,7 +37,7 @@ const Project = (props) => {
             maincut:'/images/cardmain.png',
             logo:'/images/cardlogo.png',
             description:'웹상에서 인터넷 명함을 생성해주는 웹애플리케이션 제작',
-            people:'단독 개발',
+            people:'개인 프로젝트',
             content:[
                 '하단의 놀력 이벤트 기능에서 경품 당첨 기능을 추가한 고도화 개발',
                 '하단의 놀력 이벤트 기능에서 경품 당첨 기능을 추가한 고도화 개발',
@@ -62,7 +62,7 @@ const Project = (props) => {
             maincut:'/images/youtubemain.png',
             logo:'/images/youtubelogo.png',
             description:'기존의 YouTube에 기능을 추가한 YouTube Clone Site 제작',
-            people:'단독 개발',
+            people:'개인 프로젝트',
             content:[
                 '하단의 놀력 이벤트 기능에서 경품 당첨 기능을 추가한 고도화 개발',
                 '하단의 놀력 이벤트 기능에서 경품 당첨 기능을 추가한 고도화 개발',
