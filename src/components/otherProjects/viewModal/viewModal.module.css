@@ -1,0 +1,65 @@
+.viewModal{
+    width: 35%;
+    position: absolute;
+    background-color: whitesmoke;
+    top: 10vh;
+    left: 30vw;
+    padding: 30px;
+    padding-bottom: 60px;
+    border-radius: 10px;
+}
+.viewModal .closeBox{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.viewModal .close{
+    border: none;
+    background-color: none;
+    cursor: pointer;
+}
+.viewModal .close svg{
+    font-size: 22px;
+}
+.viewModal .title{
+    width: 50%;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid gray;
+}
+.viewModal img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.viewModal .video{
+    width: 100%;
+    height: 20vw;
+    margin-bottom: 30px;
+}
+.viewModal .gitLink{
+    display: inline-block;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+.viewModal .gitLink:hover{
+    transform: scale(1.025);
+}
+.viewModal .gitLink svg{
+    font-size: 28px;
+    margin-right: 6px;
+}
+.viewModal .infoBox{
+    list-style: circle;
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 20px;line-height: 1.2em;
+}
+.viewModal .infoBox li{
+    margin-bottom: 1.5em;
+}
