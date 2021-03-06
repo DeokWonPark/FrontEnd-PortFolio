@@ -13,9 +13,6 @@
     border-radius: 15px;
     box-shadow: 5px 5px 5px black;
 }
-.header .info{
-
-}
 .header .title{
     font-size: 54px;
     font-weight: 500;
@@ -75,4 +72,25 @@
 }
 .header .info .linkBox .BtnBox .Btn.gitlab{
     color: #e24329;
+}
+
+@media screen and (max-width:768px){
+    .header{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+    .header .logo{
+        margin: 0;
+        width: 280px;
+        height: 300px;
+    }
+    .header .info .linkBox{
+        align-items: center;
+    }
+}
+@media screen and (max-width:480px){
+    .header .title{
+        font-size: 46px;
+    }
 }

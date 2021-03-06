@@ -35,3 +35,14 @@
     height: 100vh;
     background-color: #000000bd;
 }
+
+@media screen and (max-width:768px){
+    .Other .projectBox .projectTable thead .subTitle{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:480px){
+    .Other{
+        display: none;
+    }
+}

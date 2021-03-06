@@ -94,3 +94,45 @@
     font-weight: 700;
     color: navy;
 }
+
+@media screen and (max-width:1024px){
+    .skills .titleBox .level li{
+        width: 18px;
+        height: 18px;
+    }
+    .skills .titleBox .description{
+        font-size: 14px;
+    }
+    .skills .titleBox .description::after{
+        top:27px;
+        left:60px; 
+    }
+    .skills .titleBox .threeInfo{
+        right: 165px;
+        top: -35px;
+    }
+    .skills .titleBox .twoInfo{
+        right: 128px;
+        top: -35px;
+    }
+    .skills .titleBox .oneInfo{
+        right: 88px;
+        top: -35px;
+    }
+}
+@media screen and (max-width:768px){
+    .skills .titleBox .description{
+        font-size: 12px;
+    }
+    .skills .skillBox .Box .CategoryTitle{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width:480px){
+    .skills .titleBox .description{
+        display: none;
+    }
+    .skills .skillBox .Box .CategoryTitle{
+        font-size: 20px;
+    }
+}

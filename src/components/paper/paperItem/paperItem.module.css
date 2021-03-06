@@ -39,3 +39,34 @@
     font-size: 28px;
     margin-right: 8px;
 }
+
+@media screen and (max-width:1024px){
+    .paperItem .description{
+        padding: 0 5vw;
+    }
+}
+@media screen and (max-width:768px){
+    .paperItem .description{
+        padding: 0 1vw;
+    }
+}
+@media screen and (max-width:480px){
+    .paperItem .title{
+        font-size: 18px;
+    }
+    .paperItem .entitle{
+        font-size: 14px;
+    }
+    .paperItem .people{
+        font-size: 15px;
+    }
+    .paperItem .description{
+        font-size: 12px;
+    }
+    .paperItem .paperLink{
+        font-size: 16px;
+    }
+    .paperItem .paperLink svg{
+        font-size: 22px;
+    }
+}

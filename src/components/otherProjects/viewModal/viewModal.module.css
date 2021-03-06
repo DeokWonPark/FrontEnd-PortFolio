@@ -63,3 +63,10 @@
 .viewModal .infoBox li{
     margin-bottom: 1.5em;
 }
+
+@media screen and (max-width:1024px){
+    .viewModal{
+        width: 50%;
+        left: 22vw;
+    }
+}

@@ -27,6 +27,7 @@
 }
 .projectItem .titleBox{
     display: flex;
+    padding-right: 4vh;
 }
 .projectItem .titleBox img{
     width: 80px;
@@ -71,11 +72,13 @@
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
+    padding-right: 4.2vh;
 }
 .projectItem .people{
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 30px;
+    padding-right: 4.2vh;
     color: navy;
 }
 .projectItem .infoTitle{
@@ -88,7 +91,9 @@
 }
 .projectItem .stack .stackList{
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 50px;
+    padding-right: 4vh;
 }
 .projectItem .stack .stackList li{
     padding: 6px 10px;
@@ -102,4 +107,92 @@
     list-style: square;
     font-weight: 500;
     padding-bottom: 10px;
+    padding-right: 4vh;
+}
+
+@media screen and (max-width:768px){
+    .projectItem .cordiOuter{
+        width: 25px;
+        height: 25px;
+        top: 15px;
+        left: -13px;
+    }
+    .projectItem .cordiinner{
+        width: 13px;
+        height: 13px;
+    }
+    .projectItem .titleBox .projectTitle{
+        font-size: 24px;
+    }
+    .projectItem .titleBox img{
+        width: 65px;
+        height: 50px;
+    }
+    .projectItem .date{
+        font-size: 18px;
+    }
+    .projectItem .url{
+        font-size: 16px;
+    }
+    .projectItem .url svg{
+        font-size: 28px;
+    }
+    .projectItem .mainCut{
+        width: 93%;
+    }
+    .projectItem .description,
+    .projectItem .people{
+        font-size: 16px;
+    }
+    .projectItem .stack .stackList li{
+        font-size: 12px;
+    }
+    .projectItem .dev .devList li{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .projectItem{
+        padding-left: 20px;
+    }
+    .projectItem .cordiOuter{
+        width: 18px;
+        height: 18px;
+        top: 11px;
+        left: -9px;
+    }
+    .projectItem .cordiinner{
+        width: 10px;
+        height: 10px;
+    }
+    .projectItem .titleBox .projectTitle{
+        font-size: 20px;
+    }
+    .projectItem .titleBox img{
+        width: 55px;
+        height: 40px;
+    }
+    .projectItem .date{
+        font-size: 16px;
+    }
+    .projectItem .url{
+        font-size: 14px;
+    }
+    .projectItem .url svg{
+        font-size: 24px;
+    }
+    .projectItem .description,
+    .projectItem .people{
+        font-size: 15px;
+    }
+    .projectItem .infoTitle{
+        font-size: 16px;
+    }
+    .projectItem .stack .stackList li{
+        font-size: 10px;
+    }
+    .projectItem .dev .devList li{
+        font-size: 13px;
+    }
 }

@@ -6,7 +6,7 @@
 }
 .introduce .paragraph{
     font-family: 'Nanum Gothic', sans-serif;
-    width: 65%;
+    width: 70%;
     padding: 0 3vw;
     color: white;
     line-height: 1.5em;
@@ -27,4 +27,28 @@
     color: black;
     font-weight: 800;
     font-size: 14px;
+}
+
+@media screen and (max-width:1240px){
+    .introduce .paragraph{
+        width: 85%;
+    }
+}
+@media screen and (max-width:768px){
+    .introduce{
+        flex-direction: column;
+    }
+    .introduce .paragraph{
+        width: 95%;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:480px){
+    .introduce .paragraph{
+        font-size: 13px;
+    }
+    .introduce .paragraph .tag{
+        display: none;
+    }
 }

@@ -11,3 +11,8 @@
     box-sizing: border-box;
     box-shadow: 5px 5px 8px black;
 }
+@media screen and (max-width:768px){
+    .paper .paperBox{
+        padding: 40px 20px 1px 20px;
+    }
+}

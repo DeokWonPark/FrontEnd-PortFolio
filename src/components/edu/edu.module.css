@@ -27,3 +27,20 @@
     font-weight: 500;
     color: rgb(214, 214, 214);
 }
+
+@media screen and (max-width:768px){
+    .Edu .info li{
+        font-size: 22px;
+    }
+    .Edu .info li .sub{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:480px){
+    .Edu .info li{
+        font-size: 20px;
+    }
+    .Edu .info li .sub{
+        font-size: 12px;
+    }
+}

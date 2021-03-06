@@ -56,3 +56,18 @@
 .otherItem td svg:hover{
     opacity: 0.4;
 }
+
+@media screen and (max-width:768px){
+    .otherItem{
+        font-size: 12px;
+    }
+    .otherItem th .title{
+        font-size: 12px;
+    }
+    .otherItem .info .stack .skill{
+        font-size: 10px;
+    }
+    .otherItem td svg{
+        font-size: 20px;
+    }
+}

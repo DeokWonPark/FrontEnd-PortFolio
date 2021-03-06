@@ -4,9 +4,6 @@
     grid-template-columns: repeat(3,30%);
     column-gap: 7%;
 }
-.itemBox{
-    /* margin: 0 50px; */
-}
 .itemBox .item{
     display: flex;
     padding: 10px;
@@ -38,4 +35,19 @@
 }
 .itemBox .item .itemLevel.one{
     background-color: green;
+}
+
+@media screen and (max-width:768px){
+    .gridBox{
+        grid-template-columns: repeat(1,90%);
+    }
+}
+@media screen and (max-width:480px){
+    .itemBox .item .itemImg{
+        width: 30px;
+        height: 30px;
+    }
+    .itemBox .item .itemName{
+        font-size: 14px;
+    }
 }
