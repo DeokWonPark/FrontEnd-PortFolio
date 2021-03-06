@@ -1,5 +1,10 @@
 .paper{
     margin-top: 150px;
+    transition: all 1s ease;
+    transform: translate(0,30vh);
+}
+.paper.show{
+    transform: none;
 }
 .paper .paperBox{
     width: 100%;

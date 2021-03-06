@@ -1,6 +1,11 @@
 .skills{
     display: flex;
     flex-direction: column;
+    transition: all 1s ease;
+    transform: translate(0,30vh);
+}
+.skills.show{
+    transform: none;
 }
 .skills .titleBox{
     margin-bottom: 30px;

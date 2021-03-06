@@ -1,6 +1,11 @@
 .Project{
     width: 100%;
-    margin-bottom: 50px;
+    margin: 50px 0;
+    transition: all 1s ease;
+    transform: translate(0,30vh);
+}
+.Project.show{
+    transform: none;
 }
 .Project .Contents{
     width: 100%;

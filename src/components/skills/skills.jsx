@@ -1,17 +1,35 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import SkillItem from '../skillItem/skillItem';
 import styles from './skills.module.css';
 
 const Skills = (props) => {
+    const skillRef=useRef(null);
     const [skills,setSkills]=useState();
     useEffect(async ()=>{
         const loadData=await loadSkills();
         setSkills(loadData);
-    },[])
+
+        window.addEventListener('scroll', scrollFunc);
+    },[]);
 
     const loadSkills=async ()=>{
         const response = await fetch('/data/skills.json');
         return await response.json();
+    }
+
+    const scrollFunc=async ()=>{
+        if(skillRef.current===null){
+            return;
+        }
+        if(!skillRef.current.classList.contains(styles.show)){
+            const scrolly=skillRef.current.getBoundingClientRect().top;
+            if(window.innerHeight > scrolly){
+                skillRef.current.classList.add(styles.show);
+            }
+        }
+        else{
+            window.removeEventListener('scroll',scrollFunc);
+        }
     }
 
     const [threeOver,setThree]=useState(false);
@@ -142,7 +160,7 @@ const Skills = (props) => {
     // )
 
     //console.log(JSON.stringify(skills));
-    return <section className={styles.skills}>
+    return <section className={styles.skills} ref={skillRef}>
         <div className={styles.titleBox}>
             <h1 className="title">SKILLS</h1>
             <ul className={styles.level}>
