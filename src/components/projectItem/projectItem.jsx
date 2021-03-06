@@ -14,7 +14,7 @@ const ProjectItem = ({item}) => {
         <p className={styles.date}>{item.date}</p>
         <a href={item.git} className={styles.url}><i className="fab fa-github"></i>GitHub URL</a>
         {item.distribute && <a href={item.distribute} className={styles.url}><i className="fas fa-laptop-code"></i>Site URL</a>}
-        <a href={item.git}><img className={styles.mainCut} src={item.maincut} alt="mainCut"/></a>
+        <a href={item.distribute}><img className={styles.mainCut} src={item.maincut} alt="mainCut"/></a>
         <p className={styles.description}>{item.description}</p>
         <p className={styles.people}>{item.people}</p>
 
