@@ -1,32 +1,44 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './paper.module.css';
 import PaperItem from './paperItem/paperItem';
 
 const Paper = (props) => {
-    const [papers,setPaper]=useState([
-        {
-            title:'StyleGAN을 이용한 이상형 생성 웹 서비스 개발 (2020)',
-            enTitle:'Development of web service for ideal type generation with StyleGAN',
-            people:'임연수, 김창민, 석정민, 박덕원, 김태형',
-            description:`토너먼트 형식으로 임의의 두 얼굴 이미지 중 하나를 선택하여 이상형 순위를 생성하는 앱이나 웹 서비스가 다수 존재한다.
-            그러나 단순히 순위를 결정하는 것으로는 사용자가 어떤 얼굴에 호감을 느끼는지 보여주기 어렵다. 
-            본 연구는 사용자가 순위를 매긴 얼굴 이미지에 대해 StyleGAN 기반으로 이미지 합성을 수행하여 이상형을 생성하는 서비스를 개발하였다. 
-            합성 결과가 자연스러운 얼굴이 될 수 있도록 순위 및 스타일 수준 별로 가중치를 최적화했으며 생성된 이상형의 세부적인 특징을 조절하여 저장하고 
-            공유할 수 있도록 웹 서비스를 구현하였다.`,
-            paperURL:'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10499075',
-        },
-        {
-            title:'KALDI를 이용한 라즈베리파이 기반 오프라인 음성 인식 (2018)',
-            enTitle:'Off-line Speech Recognition based on Raspberry Pi with KALDI',
-            people:'문용성, 김예지, 김유희, 이창열, 박덕원, 김태형',
-            description:`사물인터넷 제품의 편리한 제어에 음성 명령 인터페이스가 효과적이다. 
-            본격적인 규모의 음성 인식 엔 진을 보유하지 못한 경우 인터넷 기반의 음성 인식 서비스를 사용해야 하지만 지속적 비용이 발생하는 문 제가 있다. 
-            본 연구는 스마트 조명의 음성 제어를 위해 서버를 이용하지 않는 오픈소스 음성 인식 툴킷인 KALDI를 사용하여 제한된 명령 셋을 인식하는 오프라인 음성 인식기를 구현하였다. 
-            10개 명령에 대해 100명으로부터 수집한 음성 데이터를 학습하여 인식률을 분석하였고, 
-            라즈베리파이에서 실시간으로 음성 인식이 가능함을 확인하였다.`,
-            paperURL:'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07614090',
-        },
-    ])
+    const [papers,setPaper]=useState([]);
+
+    useEffect(async()=>{
+        const loadData=await loadPaper();
+        setPaper(loadData);
+    },[]);
+
+    const loadPaper=async ()=>{
+        const response = await fetch('/data/papers.json');
+        return await response.json();
+    }
+
+    // const [papers,setPaper]=useState([
+    //     {
+    //         title:'StyleGAN을 이용한 이상형 생성 웹 서비스 개발 (2020)',
+    //         enTitle:'Development of web service for ideal type generation with StyleGAN',
+    //         people:'임연수, 김창민, 석정민, 박덕원, 김태형',
+    //         description:`토너먼트 형식으로 임의의 두 얼굴 이미지 중 하나를 선택하여 이상형 순위를 생성하는 앱이나 웹 서비스가 다수 존재한다.
+    //         그러나 단순히 순위를 결정하는 것으로는 사용자가 어떤 얼굴에 호감을 느끼는지 보여주기 어렵다. 
+    //         본 연구는 사용자가 순위를 매긴 얼굴 이미지에 대해 StyleGAN 기반으로 이미지 합성을 수행하여 이상형을 생성하는 서비스를 개발하였다. 
+    //         합성 결과가 자연스러운 얼굴이 될 수 있도록 순위 및 스타일 수준 별로 가중치를 최적화했으며 생성된 이상형의 세부적인 특징을 조절하여 저장하고 
+    //         공유할 수 있도록 웹 서비스를 구현하였다.`,
+    //         paperURL:'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10499075',
+    //     },
+    //     {
+    //         title:'KALDI를 이용한 라즈베리파이 기반 오프라인 음성 인식 (2018)',
+    //         enTitle:'Off-line Speech Recognition based on Raspberry Pi with KALDI',
+    //         people:'문용성, 김예지, 김유희, 이창열, 박덕원, 김태형',
+    //         description:`사물인터넷 제품의 편리한 제어에 음성 명령 인터페이스가 효과적이다. 
+    //         본격적인 규모의 음성 인식 엔 진을 보유하지 못한 경우 인터넷 기반의 음성 인식 서비스를 사용해야 하지만 지속적 비용이 발생하는 문 제가 있다. 
+    //         본 연구는 스마트 조명의 음성 제어를 위해 서버를 이용하지 않는 오픈소스 음성 인식 툴킷인 KALDI를 사용하여 제한된 명령 셋을 인식하는 오프라인 음성 인식기를 구현하였다. 
+    //         10개 명령에 대해 100명으로부터 수집한 음성 데이터를 학습하여 인식률을 분석하였고, 
+    //         라즈베리파이에서 실시간으로 음성 인식이 가능함을 확인하였다.`,
+    //         paperURL:'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07614090',
+    //     },
+    // ])
     return <section className={styles.paper}>
         <h1 className="title">PAPERS</h1>
         <ul className={styles.paperBox}>

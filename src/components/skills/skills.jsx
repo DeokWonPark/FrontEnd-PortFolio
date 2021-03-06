@@ -9,9 +9,9 @@ const Skills = (props) => {
         setSkills(loadData);
     },[])
 
-    const loadSkills=()=>{
-        return fetch('/data/skills.json')
-            .then((response)=>response.json());
+    const loadSkills=async ()=>{
+        const response = await fetch('/data/skills.json');
+        return await response.json();
     }
 
     const [threeOver,setThree]=useState(false);
