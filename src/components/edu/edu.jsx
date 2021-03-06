@@ -15,7 +15,7 @@ const Edu = (props) => {
             <li>
                 <p className={styles.date}>2012. 03 ~ 2015.02</p>
                 <div>
-                    <p className={styles.school}>금오 고등학교</p>
+                    <p className={styles.school}>금오고등학교</p>
                     <p className={styles.sub}>경상북도 구미시</p>
                 </div>
             </li>

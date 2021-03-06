@@ -6,7 +6,7 @@ import Introduce from './components/introduce/introduce';
 import OtherProjects from './components/otherProjects/otherProjects';
 import Paper from './components/paper/paper';
 import Project from './components/project/project';
-import Seminar from './components/seminar/seminar';
+// import Seminar from './components/seminar/seminar';
 import Skills from './components/skills/skills';
 
 function App() {

@@ -5,6 +5,11 @@ import styles from './skills.module.css';
 const Skills = (props) => {
     const skillRef=useRef(null);
     const [skills,setSkills]=useState();
+
+    const [threeOver,setThree]=useState(false);
+    const [twoOver,setTwo]=useState(false);
+    const [oneOver,setOne]=useState(false);
+    
     useEffect(async ()=>{
         const loadData=await loadSkills();
         setSkills(loadData);
@@ -32,134 +37,6 @@ const Skills = (props) => {
         }
     }
 
-    const [threeOver,setThree]=useState(false);
-    const [twoOver,setTwo]=useState(false);
-    const [oneOver,setOne]=useState(false);
-
-    // const [skills,setSkills]=useState(
-    //     {
-    //         language:[
-    //             {
-    //                 name:"JavaScript",
-    //                 img:"/images/js.png",
-    //                 level:"three",
-    //             },
-    //             {
-    //                 name:"HTML/CSS",
-    //                 img:"/images/html.png",
-    //                 level:"three",
-    //             },
-    //             {
-    //                 name:"TypeScript",
-    //                 img:"/images/ts.png",
-    //                 level:"two",
-    //             },
-    //             {
-    //                 name:"Java",
-    //                 img:"/images/java.png",
-    //                 level:"two",
-    //             },
-    //             {
-    //                 name:"Python",
-    //                 img:"/images/Python.png",
-    //                 level:"two",
-    //             },
-    //             {
-    //                 name:"C/C++",
-    //                 img:"/images/c.webp",
-    //                 level:"two",
-    //             },
-    //         ],
-    //         franwork:[
-    //             {
-    //                 name:`React.js`,
-    //                 img:"/images/React.png",
-    //                 level:"three",
-    //             },
-    //             {
-    //                 name:`React Hooks`,
-    //                 img:"/images/hooks.png",
-    //                 level:"three",
-    //             },
-    //             {
-    //                 name:"Node.js",
-    //                 img:"/images/nodejs.png",
-    //                 level:"two",
-    //             },
-    //             {
-    //                 name:"Express",
-    //                 img:"/images/express.png",
-    //                 level:"two",
-    //             },
-    //             {
-    //                 name:"PostCss",
-    //                 img:"/images/PostCSS.png",
-    //                 level:"two",
-    //             },
-    //             {
-    //                 name:"Sass",
-    //                 img:"/images/sass.png",
-    //                 level:"two",
-    //             },
-    //             {
-    //                 name:"Vue.js",
-    //                 img:"/images/vuejs.png",
-    //                 level:"one",
-    //             },
-    //             {
-    //                 name:"Flask",
-    //                 img:"/images/flask.png",
-    //                 level:"one",
-    //             },
-    //         ],
-    //         Database:[
-    //             {
-    //                 name:"MySQL",
-    //                 img:"/images/MYSQL.png",
-    //                 level:"two",
-    //             },
-    //             {
-    //                 name:"MongoDB",
-    //                 img:"/images/mongodb.png",
-    //                 level:"one",
-    //             },
-    //         ],
-    //         etc:[
-    //             {
-    //                 name:"Git/Github",
-    //                 img:"/images/git.png",
-    //                 level:"two",
-    //             },
-    //             {
-    //                 name:"Firebase",
-    //                 img:"/images/firebase.webp",
-    //                 level:"two",
-    //             },
-    //             {
-    //                 name:"Ubuntu",
-    //                 img:"/images/ubuntu.png",
-    //                 level:"two",
-    //             },
-    //             {
-    //                 name:"Android",
-    //                 img:"/images/andriod.png",
-    //                 level:"one",
-    //             },
-    //             {
-    //                 name:"Socket.io",
-    //                 img:"/images/socketio.png",
-    //                 level:"one",
-    //             },
-    //             {
-    //                 name:"Dialogflow",
-    //                 img:"/images/dialogflow.jpg",
-    //                 level:"one",
-    //             },
-    //         ]
-    //     }
-    // )
-
-    //console.log(JSON.stringify(skills));
     return <section className={styles.skills} ref={skillRef}>
         <div className={styles.titleBox}>
             <h1 className="title">SKILLS</h1>

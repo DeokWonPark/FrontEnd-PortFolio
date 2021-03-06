@@ -28,6 +28,9 @@
     font-weight: 800;
     font-size: 14px;
 }
+strong{
+    font-weight: 900;
+}
 
 @media screen and (max-width:1240px){
     .introduce .paragraph{
